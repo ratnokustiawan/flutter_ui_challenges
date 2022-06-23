@@ -25,7 +25,7 @@ class LightDrawerPage extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {
-            _key.currentState.openDrawer();
+            _key.currentState!.openDrawer();
           },
         ),
       ),
@@ -96,7 +96,7 @@ class LightDrawerPage extends StatelessWidget {
                             colors: [Colors.orange, Colors.deepOrange])),
                     child: CircleAvatar(
                       radius: 40,
-                      backgroundImage: CachedNetworkImageProvider(image),
+                      backgroundImage: NetworkImage(image),
                     ),
                   ),
                   SizedBox(height: 5.0),

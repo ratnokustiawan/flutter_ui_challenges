@@ -2,18 +2,18 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 
 class CustomPaginationBuilder extends SwiperPlugin {
-  final Color activeColor;
-  final Color color;
+  final Color? activeColor;
+  final Color? color;
   final Size activeSize;
   final Size size;
   final double space;
 
-  final Key key;
+  final Key? key;
 
   const CustomPaginationBuilder(
       {this.activeColor,
@@ -47,9 +47,8 @@ class CustomPaginationBuilder extends SwiperPlugin {
         height: size.height,
         child: Container(
           decoration: BoxDecoration(
-            color: active ? activeColor : color,
-            borderRadius: BorderRadius.circular(10.0)
-          ),
+              color: active ? activeColor : color,
+              borderRadius: BorderRadius.circular(10.0)),
           key: Key("pagination_$i"),
           margin: EdgeInsets.all(space),
         ),
@@ -71,6 +70,3 @@ class CustomPaginationBuilder extends SwiperPlugin {
     }
   }
 }
-
-
-

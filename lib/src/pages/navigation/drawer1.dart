@@ -24,7 +24,7 @@ class DarkDrawerPage extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {
-            _key.currentState.openDrawer();
+            _key.currentState!.openDrawer();
           },
         ),
       ),
@@ -95,7 +95,7 @@ class DarkDrawerPage extends StatelessWidget {
                             colors: [Colors.pink, Colors.deepPurple])),
                     child: CircleAvatar(
                       radius: 40,
-                      backgroundImage: CachedNetworkImageProvider(image),
+                      backgroundImage: NetworkImage(image),
                     ),
                   ),
                   SizedBox(height: 5.0),

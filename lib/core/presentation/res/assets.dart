@@ -1,4 +1,5 @@
 const String appLogo = 'assets/icon/icon.png';
+const String appFeatureImage = 'assets/icon/feature_store.jpg';
 const String fishtail =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/travel%2Ffishtail.jpg?alt=media';
 const String mountEverest =
@@ -103,6 +104,8 @@ const String devDamodar =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2Fdev_damodar.jpg?alt=media&token=aaf47b41-3485-4bab-bcb6-2e472b9afee6';
 const String devSudip =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2Fdev_sudip.jpg?alt=media';
+const String devArpana =
+    'https://avatars.githubusercontent.com/u/55906788?s=400&u=755774d7c380cd7bbaf7e158bef74fc275853f17&v=4';
 const String devSid =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2Fdev_sid.png?alt=media';
 
@@ -128,12 +131,16 @@ const String mortar =
 const String pineapple =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fpineapple.png?alt=media';
 const String vegetables =
-    'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fvegetables.png?alt=media';
-const String mangoSlice =
-    'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fmango_slice.png?alt=media';
+    'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fvegetables.png?alt=mediroom4ia';
 
 const INVITE_ILLUSTRATION = "https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2Finvite.png?alt=media";
 
 const String bike = "https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/bike%2Fbike1.jpg?alt=media";
 
 const String room4 = "assets/hotel/room4.jpg";
+
+const List<String> introIllus = [
+  'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/intro%2F1.png?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/intro%2F2.png?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/intro%2F3.png?alt=media'
+];

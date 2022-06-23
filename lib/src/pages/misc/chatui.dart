@@ -30,9 +30,7 @@ class ChatUi extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                       image: DecorationImage(
-                        image: CachedNetworkImageProvider(friend.image),
-                        fit: BoxFit.cover
-                      ),
+                          image: NetworkImage(friend.image), fit: BoxFit.cover),
                       borderRadius: BorderRadius.circular(50.0),
                     ),
                   ),
@@ -158,31 +156,31 @@ class ChatUi extends StatelessWidget {
                   child: Row(
                     children: <Widget>[
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/1.jpg',
+                        personImagePath: avatars[0],
                         actColor: Colors.greenAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/backdrop.png',
+                        personImagePath: avatars[1],
                         actColor: Colors.yellowAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/avatar.png',
+                        personImagePath: avatars[2],
                         actColor: Colors.redAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/5.jpg',
+                        personImagePath: avatars[3],
                         actColor: Colors.yellowAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/6.jpg',
+                        personImagePath: avatars[4],
                         actColor: Colors.greenAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/7.jpg',
+                        personImagePath: avatars[5],
                         actColor: Colors.greenAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/1.jpg',
+                        personImagePath: avatars[6],
                         actColor: Colors.greenAccent,
                       ),
                     ],
@@ -228,10 +226,10 @@ class ChatUi extends StatelessWidget {
 }
 
 class OnlinePersonAction extends StatelessWidget {
-  final String personImagePath;
-  final Color actColor;
+  final String? personImagePath;
+  final Color? actColor;
   const OnlinePersonAction({
-    Key key,
+    Key? key,
     this.personImagePath,
     this.actColor,
   }) : super(key: key);
@@ -258,9 +256,7 @@ class OnlinePersonAction extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50.0),
                 image: DecorationImage(
-                  image: AssetImage(personImagePath),
-                  fit: BoxFit.cover
-                ),
+                    image: NetworkImage(personImagePath!), fit: BoxFit.cover),
               ),
             ),
           ),
